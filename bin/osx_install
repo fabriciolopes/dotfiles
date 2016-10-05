@@ -1,0 +1,104 @@
+#!/bin/bash
+
+# install homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Update homebrew
+brew install bash-completion git
+brew update
+brew upgrade
+
+# install homebrew cask
+brew tap caskroom/cask
+
+# install homebrew bash-completion
+brew tap homebrew/completions
+
+# install mas
+brew install mas
+
+# install essentials
+brew install \
+aria2 \
+autoconf \
+automake \
+colordiff \
+openssl \
+sqlite \
+ssh-copy-id \
+terraform \
+tree \
+wget \
+zsh \
+zsh-completions 
+
+
+# install "out of appstore" apps
+brew cask install \
+sublime \
+firefox \
+github-desktop \
+google-chrome \
+google-drive \
+slack \
+spotify \
+vlc \
+zeplin \
+skype 
+
+
+# install appstore apps
+echo "💿 Divvy" && mas install 413857545
+echo "💿 Keynote" && mas install 409183694
+echo "💿 LastPass" && mas install 926036361
+echo "💿 Rar" && mas install 646295438
+echo "💿 xcode" && mas install 497799835
+
+# install sshfs
+# brew cask install sshfs
+
+# install python
+brew install \
+pyenv \
+pyenv-virtualenv \
+pyenv-virtualenvwrapper
+
+# install ruby
+brew install chruby ruby-install
+ruby-install ruby --no-reinstall
+brew install --HEAD https://raw.github.com/postmodern/gem_home/master/homebrew/gem_home.rb
+
+# install java
+brew cask install java
+
+# brew install \
+# ant \
+# maven \
+# maven-completion \
+# gradle \
+# selenium-server-standalone \
+
+# install android
+# brew install \
+# android-sdk \
+# android-ndk \
+# gradle \
+# exiftool \
+
+# brew cask install \
+# xquartz \
+# inkscape \
+
+install scala
+brew install \
+scala \
+sbt 
+
+# install node
+brew install node
+
+# install go
+brew install go
+
+# install elixir
+brew install elixir
