@@ -35,6 +35,7 @@ zsh-completions
 
 # install "out of appstore" apps
 brew cask install \
+docker \
 sublime \
 firefox \
 github-desktop \
