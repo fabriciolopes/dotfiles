@@ -36,7 +36,7 @@ zsh-completions
 # install "out of appstore" apps
 brew cask install \
 docker \
-sublime \
+sublime-text \
 firefox \
 github-desktop \
 google-chrome \
