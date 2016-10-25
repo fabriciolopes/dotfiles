@@ -20,6 +20,7 @@ brew install mas
 # install essentials
 brew install \
 aria2 \
+wrk \
 autoconf \
 automake \
 colordiff \
@@ -36,6 +37,7 @@ zsh-completions
 # install "out of appstore" apps
 brew cask install \
 docker \
+sequel-pro \
 sublime-text \
 firefox \
 github-desktop \
@@ -95,11 +97,17 @@ brew install \
 scala \
 sbt 
 
+# install mysql
+brew install mysql
+
 # install node
 brew install node
 
 # install go
 brew install go
+
+# install erlang
+brew install erlang
 
 # install elixir
 brew install elixir
