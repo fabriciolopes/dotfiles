@@ -102,6 +102,8 @@ brew install mysql
 
 # install node
 brew install node
+brew install nvm
+
 
 # install go
 brew install go
