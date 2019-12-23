@@ -1,66 +1,65 @@
 #!/bin/bash
 
 # install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Update homebrew
-brew install bash-completion git
-brew update
-brew upgrade
+# # Update homebrew
+# brew install bash-completion git
+# brew update
+# brew upgrade
 
-# install homebrew cask
-brew tap caskroom/cask
+# # install homebrew cask
+# brew tap caskroom/cask
 
-# install homebrew bash-completion
-brew tap homebrew/completions
+# # install homebrew bash-completion
+# brew tap homebrew/completions
 
-# install mas
-brew install mas
+# # install mas
+# brew install mas
 
 # install essentials
-brew install \
-aria2 \
-wrk \
-autoconf \
-automake \
-colordiff \
-openssl \
-sqlite \
-ssh-copy-id \
-terraform \
-tree \
-wget \
-zsh \
-zsh-completions 
+# brew install \
+# aria2 \
+# wrk \
+# autoconf \
+# automake \
+# colordiff \
+# openssl \
+# sqlite \
+# ssh-copy-id \
+# terraform \
+# tree \
+# wget \
+# zsh \
+# zsh-completions 
 
 
 # install "out of appstore" apps
 brew cask install \
 docker \
-sequel-pro \
-sublime-text \
-firefox \
-github-desktop \
-google-chrome \
-google-drive \
-slack \
-spotify \
-vlc \
-zeplin \
-skype 
+
+# firefox \
+# github-desktop \
+# google-chrome \
+# google-drive \
+# slack \
+# spotify \
+# vlc \
+# zeplin \
+# skype 
 
 
 # install appstore apps
-echo "💿 Divvy" && mas install 413857545
-echo "💿 Keynote" && mas install 409183694
-echo "💿 LastPass" && mas install 926036361
-echo "💿 Rar" && mas install 646295438
-echo "💿 xcode" && mas install 497799835
+# echo "💿 Divvy" && mas install 413857545
+# echo "💿 Keynote" && mas install 409183694
+# echo "💿 LastPass" && mas install 926036361
+# echo "💿 Rar" && mas install 646295438
+# echo "💿 xcode" && mas install 497799835
 
 # install sshfs
 # brew cask install sshfs
 
-# install python
+# # install python
 brew install \
 pyenv \
 pyenv-virtualenv \
@@ -92,17 +91,19 @@ brew cask install java
 # xquartz \
 # inkscape \
 
-install scala
+# install scala
 brew install \
 scala \
 sbt 
 
-# install mysql
-brew install mysql
+# # install mysql
+# brew install mysql
 
 # install node
 brew install node
 brew install nvm
+brew install yarn
+brew install npm
 
 
 # install go
