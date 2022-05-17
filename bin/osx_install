@@ -4,7 +4,7 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Update homebrew
-brew install bash-completion git
+brew install bash-completion
 brew update
 brew upgrade
 
@@ -19,16 +19,9 @@ brew install mas
 
 # install essentials
 brew install \
-aria2 \
-wrk \
-autoconf \
-automake \
 colordiff \
 openssl \
-sqlite \
-ssh-copy-id \
 terraform \
-tree \
 wget \
 zsh \
 zsh-completions 
@@ -36,38 +29,49 @@ zsh-completions
 
 # install "out of appstore" apps
 brew cask install \
+iterm2 \
 docker \
-firefox \
-# github-desktop \
 google-chrome \
-# google-drive \
-slack \
+google-drive \
+discord \
 spotify \
-# vlc \
-# zeplin \
-# skype 
+dbeaver-community \
+insomnia \
+rectangle \
+obs \
+vscode \
+openvpn-connect \
+zoom 
 
 
 # install appstore apps
-# echo "💿 Divvy" && mas install 413857545
+echo "💿 xcode" && mas install 497799835
 # echo "💿 Keynote" && mas install 409183694
 # echo "💿 LastPass" && mas install 926036361
 # echo "💿 Rar" && mas install 646295438
-# echo "💿 xcode" && mas install 497799835
 
-# install sshfs
-# brew cask install sshfs
+# install node
+brew install nvm
+nvm node 16
+brew install yarn
+# brew install node
+# brew install npm
+
+
+# install go
+brew install golang
 
 # # install python
-brew install \
-pyenv \
-pyenv-virtualenv \
-pyenv-virtualenvwrapper
+# brew install \
+# pyenv \
+# pyenv-virtualenv \
+# pyenv-virtualenvwrapper
 
 # install ruby
-brew install chruby ruby-install
-ruby-install ruby --no-reinstall
-brew install --HEAD https://raw.github.com/postmodern/gem_home/master/homebrew/gem_home.rb
+brew install ruby
+# brew install chruby ruby-install
+# ruby-install ruby --no-reinstall
+# brew install --HEAD https://raw.github.com/postmodern/gem_home/master/homebrew/gem_home.rb
 
 # install java
 brew cask install java
@@ -91,25 +95,16 @@ brew cask install java
 # inkscape \
 
 # install scala
-brew install \
-scala \
-sbt 
+# brew install \
+# scala \
+# sbt 
 
 # # install mysql
 # brew install mysql
 
-# install node
-brew install node
-brew install nvm
-brew install yarn
-brew install npm
 
+# # install erlang
+# brew install erlang
 
-# install go
-brew install go
-
-# install erlang
-brew install erlang
-
-# install elixir
-brew install elixir
+# # install elixir
+# brew install elixir
