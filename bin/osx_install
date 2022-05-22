@@ -9,10 +9,7 @@ brew update
 brew upgrade
 
 # install homebrew cask
-brew tap caskroom/cask
-
-# # install homebrew bash-completion
-brew tap homebrew/completions
+brew install cask
 
 # # install mas
 brew install mas
@@ -24,11 +21,14 @@ openssl \
 terraform \
 wget \
 zsh \
-zsh-completions 
+zsh-completions \ 
+awscli \ 
+fzf
 
+$(brew --prefix)/opt/fzf/install
 
 # install "out of appstore" apps
-brew cask install \
+brew install --cask \
 iterm2 \
 docker \
 google-chrome \
@@ -39,20 +39,19 @@ dbeaver-community \
 insomnia \
 rectangle \
 obs \
-vscode \
-openvpn-connect \
+Visual-studio-code \
 zoom 
 
 
 # install appstore apps
-echo "💿 xcode" && mas install 497799835
+# echo "💿 xcode" && mas install 497799835
 # echo "💿 Keynote" && mas install 409183694
 # echo "💿 LastPass" && mas install 926036361
 # echo "💿 Rar" && mas install 646295438
 
 # install node
 brew install nvm
-nvm node 16
+nvm install 16
 brew install yarn
 # brew install node
 # brew install npm
@@ -74,7 +73,7 @@ brew install ruby
 # brew install --HEAD https://raw.github.com/postmodern/gem_home/master/homebrew/gem_home.rb
 
 # install java
-brew cask install java
+# brew install --cask java
 
 # brew install \
 # ant \
